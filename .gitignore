@@ -1,0 +1,62 @@
+# Python 编译文件与缓存
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+.cache/
+
+# 虚拟环境 (Virtual Environments)
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# 深度学习模型权重与持久化文件 (Model Checkpoints & Weights)
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+*.onnx
+*.pb
+checkpoints/
+model_save/
+saved_models/
+
+# 数据文件与缓存 (Data Files & Datasets)
+data/
+datasets/
+*.csv
+*.tsv
+*.xlsx
+*.npy
+*.npz
+*.parquet
+*.h5
+*.db
+*.sqlite
+
+# 日志文件 (Logs)
+*.log
+logs/
+
+# IDE 与编辑器配置文件
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.project
+.pydevproject
+
+# 系统临时文件
+.DS_Store
+Thumbs.db
+
+# 个人文件
+learn/QA/
