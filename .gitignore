@@ -38,6 +38,10 @@ datasets/
 *.h5
 *.db
 *.sqlite
+docs/
+!work_01/docs/
+!work_02/transformer_lab/data
+!work_02/transformer_lab/docs
 
 # 日志文件 (Logs)
 *.log
@@ -61,3 +65,10 @@ Thumbs.db
 # 个人文件
 learn/QA/
 .cursorrules
+
+# work_02 教学实验室本地生成文件
+work_02/transformer_lab/experiments/*/
+work_02/transformer_lab/data/input.txt
+
+# 临时/个人开发目录 (Local development directories)
+origin_handwritting/

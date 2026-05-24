@@ -41,11 +41,11 @@ def parse_args():
     parser.add_argument(
         "--model",
         type=str,
-        default="handwritten",
+        default="torch",
         choices=["handwritten", "torch"],
         help="选择运行的模型版本: 'handwritten' (自写版本) 或 'torch' (官方封装版)"
     )
-    parser.add_argument("--epochs", type=int, default=5, help="训练周期数 (默认 5，在 CPU 上约需 1~2 分钟)")
+    parser.add_argument("--epochs", type=int, default=7, help="训练周期数 (默认 5，在 CPU 上约需 1~2 分钟)")
     parser.add_argument("--batch_size", type=int, default=128, help="批处理大小 (默认 128)")
     parser.add_argument("--lr", type=float, default=0.001, help="学习率 (默认 0.001)")
     parser.add_argument("--num_samples", type=int, default=8000, help="数据集样本生成数量 (默认 8000)")

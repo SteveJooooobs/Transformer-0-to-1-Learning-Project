@@ -1,0 +1,28 @@
+# configs/experiment_dmodel.yaml — 修改 d_model 的实验
+# 目的：观察不同模型维度对性能的影响
+# 可以尝试 d_model = 64, 128, 256（注意 d_model 必须能被 num_heads 整除）
+
+model:
+  d_model: 128        # 可修改为 64, 128, 256
+  num_heads: 4
+  d_ff: 512           # 建议保持 d_ff = d_model * 4
+  num_layers: 2
+  max_len: 256
+  dropout: 0.1
+
+training:
+  batch_size: 64
+  learning_rate: 0.001
+  epochs: 20
+  seq_len: 64
+  train_ratio: 0.9
+  grad_clip: 1.0
+  log_interval: 50
+  save_interval: 5
+
+data:
+  data_dir: "data"
+
+experiment:
+  name: "vary_dmodel"
+  output_dir: "experiments/vary_dmodel"

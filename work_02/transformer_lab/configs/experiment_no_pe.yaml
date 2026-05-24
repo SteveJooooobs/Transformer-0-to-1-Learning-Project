@@ -1,0 +1,28 @@
+# configs/experiment_no_pe.yaml — 去掉位置编码的实验
+# 目的：观察位置编码对模型性能的影响
+
+model:
+  d_model: 128
+  num_heads: 4
+  d_ff: 512
+  num_layers: 2
+  max_len: 256
+  dropout: 0.1
+  use_positional_encoding: false  # 关闭位置编码
+
+training:
+  batch_size: 64
+  learning_rate: 0.001
+  epochs: 20
+  seq_len: 64
+  train_ratio: 0.9
+  grad_clip: 1.0
+  log_interval: 50
+  save_interval: 5
+
+data:
+  data_dir: "data"
+
+experiment:
+  name: "no_positional_encoding"
+  output_dir: "experiments/no_positional_encoding"

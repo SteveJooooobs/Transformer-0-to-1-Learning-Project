@@ -1,0 +1,20 @@
+# From-Scratch Transformer Lab 依赖列表
+# 安装方法: pip install -r requirements.txt
+
+# 核心深度学习框架（默认安装可能为 CPU 版本。如需 GPU/CUDA 支持，请至 PyTorch 官网选择对应指令安装）
+torch>=2.0.0
+
+# 配置文件解析
+pyyaml>=6.0
+
+# 测试框架
+pytest>=7.0
+
+# 数值计算
+numpy>=1.24
+
+# 可视化（用于 notebooks 和实验）
+matplotlib>=3.7
+
+# 进度条
+tqdm>=4.65
