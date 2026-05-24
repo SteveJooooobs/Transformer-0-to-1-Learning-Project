@@ -1,4 +1,4 @@
-# Transformer-0-to-1-Learning-Platform (transformer从0-1学习项目)
+# Transformer-0-to-1-Learning-Project (transformer从0-1学习项目)
 
 本项目是一个功能完备、文档详实的 **Transformer 学习与对比实验项目**。项目分为两个核心工作区：
 
