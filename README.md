@@ -1,6 +1,6 @@
-# Transformer 学习与对比平台 (Handwritten vs. PyTorch Native & From-Scratch Lab)
+# Transformer-0-to-1-Learning-Platform (transformer从0-1学习项目)
 
-本项目是一个功能完备、文档详实的 **Transformer 学习与对比实验平台**。项目分为两个核心工作区：
+本项目是一个功能完备、文档详实的 **Transformer 学习与对比实验项目**。项目分为两个核心工作区：
 
 1. **`work_01` (Date Standardization Lab)**: 基于日期格式转换任务（如将 `"May 23, 2026"` 转换为 `"2026-05-23"`），深度对比**纯手写白盒 Transformer** 与 **PyTorch 官方原生封装 Transformer** 在参数结构、训练效率和注意力对齐矩阵（Attention Alignment Map）上的差异。
 2. **`work_02` (From-Scratch Transformer Lab)**: 基于 **Tiny Shakespeare** 字符级语言建模任务，从零构建经典的 **Encoder-Decoder Transformer** 教学实验室，配有完备的自动化单元测试、可视化分析 Notebook 以及多维度对比实验（包括无位置编码、不同注意力头数、不同隐藏维度）。
